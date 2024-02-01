@@ -1,5 +1,9 @@
 #include <iostream>
 
+float getFahrenheit(float celsius) {
+    return (celsius * 9/5) + 32;
+}
+
 int main()
 {
     float degCelsius = 78.0f;
@@ -13,8 +17,9 @@ int main()
     std::cin >> degCelsius;
     std::cout << "\n";
     
-    degFahrenheit = (degCelsius * 9/5) + 32;
+    degFahrenheit = getFahrenheit(degCelsius);
     
     std::cout << "Celsius:    " << degCelsius << std::endl;
     std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
 }
+
